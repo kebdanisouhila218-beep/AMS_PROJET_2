@@ -1,0 +1,16 @@
+STATS GLOBALES
+==================================================
+Total            : 375853
+Longueur moyenne : 7.60
+Min / Max        : 1 / 110
+Uniques          : 375819
+Doublons         : 34
+
+COMPOSITION:
+  Lettres + Chiffres        : 196276  (52.2%)
+  Lettres seules            : 131491  (35.0%)
+  Chiffres seuls            :  46298  (12.3%)
+  L + C + Speciaux          :   1071  (0.3%)
+  Lettres + Speciaux        :    644  (0.2%)
+  Chiffres + Speciaux       :     61  (0.0%)
+  Speciaux seuls            :     12  (0.0%)

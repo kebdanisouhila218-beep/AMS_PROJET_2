@@ -1,0 +1,116 @@
+
+======================================================================
+RUN DATE : 2026-04-15 11:27:15
+MODELE   : TRANSFORMER
+======================================================================
+
+>>> Chargement ../../Data/eval.txt ...
+>>> eval.txt : 1,999 mots de passe  (1,999 uniques)
+
+======================================================================
+EVALUATION TRANSFORMER vs EVAL.TXT
+======================================================================
+
+[10k] Chargement runs_lstm/10k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 10,000
+  Mots de passe uniques         : 10,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 7.52 chars
+  Hits sur eval                 : 2
+  Couverture eval               : 0.1001%
+  Couverture bigrammes          : 62.66%  (2,005 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [!!]   Entropie reelle        : 38.36 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  41.7%  ####################
+    Moyen  :  55.6%  ###########################
+    Mixte  :   2.4%  # <-- CIBLE
+    Fort   :   0.3%  
+
+  [!!]   Mots Mixte+Fort  : 2.7%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 0.1001%  (cible : Maximale)
+
+  Exemples de hits (2) :
+    - shadow
+    - mustang
+  ------------------------------------------------------------
+
+[100k] Chargement runs_lstm/100k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 100,000
+  Mots de passe uniques         : 100,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 7.61 chars
+  Hits sur eval                 : 6
+  Couverture eval               : 0.3002%
+  Couverture bigrammes          : 92.69%  (2,966 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [!!]   Entropie reelle        : 39.14 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  39.3%  ###################
+    Moyen  :  57.3%  ############################
+    Mixte  :   2.8%  # <-- CIBLE
+    Fort   :   0.6%  
+
+  [!!]   Mots Mixte+Fort  : 3.3%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 0.3002%  (cible : Maximale)
+
+  Exemples de hits (6) :
+    - abc123
+    - qwerty1
+    - fucker
+    - password
+    - chanter
+    - madman
+  ------------------------------------------------------------
+
+[1M] Chargement runs_lstm/1M.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 1,000,000
+  Mots de passe uniques         : 1,000,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 7.60 chars
+  Hits sur eval                 : 41
+  Couverture eval               : 2.0510%
+  Couverture bigrammes          : 97.94%  (3,134 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [!!]   Entropie reelle        : 39.02 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  39.7%  ###################
+    Moyen  :  57.1%  ############################
+    Mixte  :   2.7%  # <-- CIBLE
+    Fort   :   0.5%  
+
+  [!!]   Mots Mixte+Fort  : 3.2%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 2.0510%  (cible : Maximale)
+
+  Exemples de hits (41) :
+    - shadow
+    - sucker
+    - password
+    - hackme
+    - xxxxxx
+    - dragon
+    - boogerboy
+    - madman
+    - kernel
+    - amanda
+  ------------------------------------------------------------
+
+======================================================================
+DONE — evaluation lstm terminee
+======================================================================
+>>> Log sauvegarde dans : evaluate_lstm2.log

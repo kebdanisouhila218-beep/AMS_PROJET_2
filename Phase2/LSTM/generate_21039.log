@@ -1,0 +1,212 @@
+=== GPU disponible ===
+Tue Apr 14 19:51:10 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla P100-PCIE-16GB            Off| 00000000:D8:00.0 Off |                    0 |
+| N/A   36C    P0               28W / 250W|      0MiB / 16384MiB |      1%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+=== Debut generation ===
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From generate_lstm.py:30: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From generate_lstm.py:35: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From generate_lstm.py:36: The name tf.keras.backend.set_session is deprecated. Please use tf.compat.v1.keras.backend.set_session instead.
+
+[WARNING] Aucun GPU detecte
+
+Chargement vocabulaire 'vocabulary.json'...
+Vocabulaire : 93 caracteres
+
+Construction modele LSTM sur /GPU:0 ...
+WARNING:tensorflow:From /home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/keras/initializers.py:119: calling RandomUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/nas-wks01/users/uapv2600478/.local/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+Chargement poids 'lstm_best_model.h5'...
+Warm-up GPU...
+GPU pret.
+
+Chargement train '../../Data/train.txt'...
+Train : 375,853 mots de passe
+Chargement eval '../../Data/eval.txt'...
+Eval  : 1,999 mots de passe
+
+Construction des pools de seeds...
+  Pool seeds train : 1,078,015
+  Pool seeds eval  : 1,999
+
+=================================================================
+Generation 10,000 mots de passe -> runs_lstm/10k.txt
+  min_len=6, max_len=20, batch=2048, temps=(0.8, 1.0, 1.2, 1.4)
+=================================================================
+      10,000 /     10,000  |     270 pwd/s  |  37.1s  |  ETA 0s
+  Fichier ecrit : runs_lstm/10k.txt  (0.09 MB)  en 37.1s
+
+=================================================================
+Generation 100,000 mots de passe -> runs_lstm/100k.txt
+  min_len=6, max_len=20, batch=2048, temps=(0.8, 1.0, 1.2, 1.4)
+=================================================================
+      10,067 /    100,000  |     287 pwd/s  |  35.1s  |  ETA 313s
+      20,277 /    100,000  |     289 pwd/s  |  70.1s  |  ETA 276s
+      30,431 /    100,000  |     285 pwd/s  |  106.7s  |  ETA 244s
+      40,723 /    100,000  |     283 pwd/s  |  143.7s  |  ETA 209s
+      50,752 /    100,000  |     285 pwd/s  |  178.3s  |  ETA 173s
+      60,837 /    100,000  |     285 pwd/s  |  213.1s  |  ETA 137s
+      71,113 /    100,000  |     286 pwd/s  |  248.9s  |  ETA 101s
+      81,127 /    100,000  |     285 pwd/s  |  284.2s  |  ETA 66s
+      91,300 /    100,000  |     285 pwd/s  |  320.0s  |  ETA 30s
+     100,000 /    100,000  |     285 pwd/s  |  351.4s  |  ETA 0s
+  Fichier ecrit : runs_lstm/100k.txt  (0.86 MB)  en 351.4s
+
+=================================================================
+Generation 1,000,000 mots de passe -> runs_lstm/1M.txt
+  min_len=6, max_len=20, batch=2048, temps=(0.8, 1.0, 1.2, 1.4)
+=================================================================
+      10,012 /  1,000,000  |     288 pwd/s  |  34.8s  |  ETA 3437s
+      20,077 /  1,000,000  |     288 pwd/s  |  69.8s  |  ETA 3407s
+      30,103 /  1,000,000  |     290 pwd/s  |  103.8s  |  ETA 3343s
+      40,355 /  1,000,000  |     288 pwd/s  |  139.9s  |  ETA 3328s
+      50,574 /  1,000,000  |     289 pwd/s  |  175.0s  |  ETA 3286s
+      60,871 /  1,000,000  |     287 pwd/s  |  212.1s  |  ETA 3272s
+      70,972 /  1,000,000  |     287 pwd/s  |  247.6s  |  ETA 3242s
+      81,326 /  1,000,000  |     287 pwd/s  |  283.2s  |  ETA 3199s
+      91,580 /  1,000,000  |     287 pwd/s  |  319.6s  |  ETA 3170s
+     101,589 /  1,000,000  |     286 pwd/s  |  355.5s  |  ETA 3144s
+     111,662 /  1,000,000  |     284 pwd/s  |  393.2s  |  ETA 3128s
+     121,888 /  1,000,000  |     283 pwd/s  |  430.5s  |  ETA 3102s
+     131,903 /  1,000,000  |     283 pwd/s  |  466.8s  |  ETA 3072s
+     142,106 /  1,000,000  |     283 pwd/s  |  502.5s  |  ETA 3034s
+     152,211 /  1,000,000  |     282 pwd/s  |  539.5s  |  ETA 3005s
+     162,503 /  1,000,000  |     282 pwd/s  |  575.6s  |  ETA 2966s
+     172,732 /  1,000,000  |     282 pwd/s  |  611.6s  |  ETA 2929s
+     182,972 /  1,000,000  |     282 pwd/s  |  648.5s  |  ETA 2896s
+     193,310 /  1,000,000  |     282 pwd/s  |  685.0s  |  ETA 2859s
+     203,387 /  1,000,000  |     282 pwd/s  |  721.0s  |  ETA 2824s
+     213,442 /  1,000,000  |     282 pwd/s  |  756.7s  |  ETA 2789s
+     223,450 /  1,000,000  |     282 pwd/s  |  791.8s  |  ETA 2752s
+     233,756 /  1,000,000  |     282 pwd/s  |  827.7s  |  ETA 2713s
+     243,773 /  1,000,000  |     283 pwd/s  |  862.3s  |  ETA 2675s
+     253,836 /  1,000,000  |     283 pwd/s  |  898.3s  |  ETA 2640s
+     264,269 /  1,000,000  |     283 pwd/s  |  935.3s  |  ETA 2604s
+     274,541 /  1,000,000  |     282 pwd/s  |  972.0s  |  ETA 2568s
+     284,809 /  1,000,000  |     282 pwd/s  |  1008.3s  |  ETA 2532s
+     294,850 /  1,000,000  |     282 pwd/s  |  1044.0s  |  ETA 2497s
+     305,284 /  1,000,000  |     283 pwd/s  |  1080.0s  |  ETA 2458s
+     315,461 /  1,000,000  |     283 pwd/s  |  1115.5s  |  ETA 2421s
+     325,605 /  1,000,000  |     283 pwd/s  |  1150.8s  |  ETA 2384s
+     335,788 /  1,000,000  |     283 pwd/s  |  1186.1s  |  ETA 2346s
+     346,209 /  1,000,000  |     283 pwd/s  |  1222.5s  |  ETA 2309s
+     356,256 /  1,000,000  |     283 pwd/s  |  1258.9s  |  ETA 2275s
+     366,267 /  1,000,000  |     283 pwd/s  |  1294.8s  |  ETA 2240s
+     376,454 /  1,000,000  |     283 pwd/s  |  1330.7s  |  ETA 2204s
+     386,644 /  1,000,000  |     283 pwd/s  |  1367.2s  |  ETA 2169s
+     396,775 /  1,000,000  |     283 pwd/s  |  1402.4s  |  ETA 2132s
+     407,002 /  1,000,000  |     283 pwd/s  |  1439.2s  |  ETA 2097s
+     417,047 /  1,000,000  |     283 pwd/s  |  1473.8s  |  ETA 2060s
+     427,230 /  1,000,000  |     283 pwd/s  |  1510.3s  |  ETA 2025s
+     437,309 /  1,000,000  |     283 pwd/s  |  1546.7s  |  ETA 1990s
+     447,494 /  1,000,000  |     283 pwd/s  |  1582.5s  |  ETA 1954s
+     457,724 /  1,000,000  |     283 pwd/s  |  1619.1s  |  ETA 1918s
+     467,972 /  1,000,000  |     283 pwd/s  |  1655.0s  |  ETA 1882s
+     478,111 /  1,000,000  |     283 pwd/s  |  1691.0s  |  ETA 1846s
+     488,299 /  1,000,000  |     283 pwd/s  |  1728.3s  |  ETA 1811s
+     498,485 /  1,000,000  |     282 pwd/s  |  1764.9s  |  ETA 1776s
+     508,621 /  1,000,000  |     282 pwd/s  |  1800.7s  |  ETA 1740s
+     518,635 /  1,000,000  |     282 pwd/s  |  1836.0s  |  ETA 1704s
+     528,831 /  1,000,000  |     282 pwd/s  |  1872.6s  |  ETA 1668s
+     538,892 /  1,000,000  |     282 pwd/s  |  1909.0s  |  ETA 1633s
+     548,963 /  1,000,000  |     282 pwd/s  |  1944.7s  |  ETA 1598s
+     559,405 /  1,000,000  |     282 pwd/s  |  1981.2s  |  ETA 1560s
+     569,789 /  1,000,000  |     282 pwd/s  |  2018.7s  |  ETA 1524s
+     579,837 /  1,000,000  |     282 pwd/s  |  2054.6s  |  ETA 1489s
+     590,139 /  1,000,000  |     282 pwd/s  |  2091.4s  |  ETA 1453s
+     600,162 /  1,000,000  |     282 pwd/s  |  2127.6s  |  ETA 1417s
+     610,408 /  1,000,000  |     282 pwd/s  |  2165.3s  |  ETA 1382s
+     620,457 /  1,000,000  |     282 pwd/s  |  2202.4s  |  ETA 1347s
+     630,628 /  1,000,000  |     282 pwd/s  |  2237.4s  |  ETA 1311s
+     641,024 /  1,000,000  |     282 pwd/s  |  2274.4s  |  ETA 1274s
+     651,374 /  1,000,000  |     282 pwd/s  |  2312.6s  |  ETA 1238s
+     661,458 /  1,000,000  |     282 pwd/s  |  2348.1s  |  ETA 1202s
+     671,696 /  1,000,000  |     282 pwd/s  |  2384.3s  |  ETA 1165s
+     681,803 /  1,000,000  |     282 pwd/s  |  2421.2s  |  ETA 1130s
+     692,021 /  1,000,000  |     282 pwd/s  |  2456.5s  |  ETA 1093s
+     702,147 /  1,000,000  |     282 pwd/s  |  2492.0s  |  ETA 1057s
+     712,314 /  1,000,000  |     282 pwd/s  |  2528.3s  |  ETA 1021s
+     722,358 /  1,000,000  |     282 pwd/s  |  2563.9s  |  ETA 985s
+     732,509 /  1,000,000  |     282 pwd/s  |  2599.5s  |  ETA 949s
+     742,522 /  1,000,000  |     282 pwd/s  |  2634.9s  |  ETA 914s
+     752,805 /  1,000,000  |     282 pwd/s  |  2671.2s  |  ETA 877s
+     762,900 /  1,000,000  |     282 pwd/s  |  2705.3s  |  ETA 841s
+     772,988 /  1,000,000  |     282 pwd/s  |  2741.5s  |  ETA 805s
+     783,121 /  1,000,000  |     282 pwd/s  |  2778.2s  |  ETA 769s
+     793,210 /  1,000,000  |     282 pwd/s  |  2814.3s  |  ETA 734s
+     803,587 /  1,000,000  |     282 pwd/s  |  2851.7s  |  ETA 697s
+     813,601 /  1,000,000  |     282 pwd/s  |  2886.9s  |  ETA 661s
+     823,623 /  1,000,000  |     282 pwd/s  |  2923.1s  |  ETA 626s
+     833,928 /  1,000,000  |     282 pwd/s  |  2958.9s  |  ETA 589s
+     844,025 /  1,000,000  |     282 pwd/s  |  2995.6s  |  ETA 554s
+     854,232 /  1,000,000  |     282 pwd/s  |  3031.6s  |  ETA 517s
+     864,355 /  1,000,000  |     282 pwd/s  |  3067.9s  |  ETA 481s
+     874,609 /  1,000,000  |     282 pwd/s  |  3105.7s  |  ETA 445s
+     884,658 /  1,000,000  |     282 pwd/s  |  3142.4s  |  ETA 410s
+     894,817 /  1,000,000  |     282 pwd/s  |  3178.5s  |  ETA 374s
+     905,103 /  1,000,000  |     281 pwd/s  |  3215.6s  |  ETA 337s
+     915,424 /  1,000,000  |     282 pwd/s  |  3251.4s  |  ETA 300s
+     925,503 /  1,000,000  |     282 pwd/s  |  3286.4s  |  ETA 265s
+     935,660 /  1,000,000  |     281 pwd/s  |  3324.7s  |  ETA 229s
+     945,794 /  1,000,000  |     281 pwd/s  |  3361.0s  |  ETA 193s
+     956,028 /  1,000,000  |     281 pwd/s  |  3396.8s  |  ETA 156s
+     966,255 /  1,000,000  |     281 pwd/s  |  3433.2s  |  ETA 120s
+     976,285 /  1,000,000  |     281 pwd/s  |  3469.3s  |  ETA 84s
+     986,363 /  1,000,000  |     281 pwd/s  |  3505.0s  |  ETA 48s
+     996,456 /  1,000,000  |     281 pwd/s  |  3541.0s  |  ETA 13s
+   1,000,000 /  1,000,000  |     281 pwd/s  |  3554.3s  |  ETA 0s
+  Fichier ecrit : runs_lstm/1M.txt  (8.60 MB)  en 3554.5s
+
+=================================================================
+GENERATION COMPLETE en 3943.1s
+=================================================================
+  10k.txt       0.09 MB
+  100k.txt      0.86 MB
+  1M.txt        8.60 MB
+=== Fin generation ===

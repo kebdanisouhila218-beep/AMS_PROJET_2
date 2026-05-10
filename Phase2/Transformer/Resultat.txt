@@ -1,0 +1,283 @@
+##################runss_transformer Evaluate ######################"""
+======================================================================
+RUN DATE : 2026-04-14 14:35:51
+MODELE   : TRANSFORMER
+======================================================================
+
+>>> Chargement ../../Data/eval.txt ...
+>>> eval.txt : 1,999 mots de passe  (1,999 uniques)
+
+======================================================================
+EVALUATION TRANSFORMER vs EVAL.TXT
+======================================================================
+
+[10k] Chargement runss_transformer/10k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 10,000
+  Mots de passe uniques         : 10,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 7.80 chars
+  Hits sur eval                 : 5
+  Couverture eval               : 0.2501%
+  Couverture bigrammes          : 68.12%  (2,180 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [OK]   Entropie reelle        : 40.90 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  36.4%  ##################
+    Moyen  :  58.9%  #############################
+    Mixte  :   3.4%  # <-- CIBLE
+    Fort   :   1.2%  
+
+  [!!]   Mots Mixte+Fort  : 4.6%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 0.2501%  (cible : Maximale)
+
+  Exemples de hits (5) :
+    - terrence
+    - test123
+    - 123456
+    - snowball
+    - spitfire
+  ------------------------------------------------------------
+
+[100k] Chargement runss_transformer/100k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 100,000
+  Mots de passe uniques         : 100,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 7.73 chars
+  Hits sur eval                 : 21
+  Couverture eval               : 1.0505%
+  Couverture bigrammes          : 92.50%  (2,960 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [OK]   Entropie reelle        : 40.37 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  37.2%  ##################
+    Moyen  :  58.9%  #############################
+    Mixte  :   3.0%  # <-- CIBLE
+    Fort   :   0.8%  
+
+  [!!]   Mots Mixte+Fort  : 3.9%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 1.0505%  (cible : Maximale)
+
+  Exemples de hits (21) :
+    - 123456
+    - sucker
+    - password
+    - danger
+    - outside
+    - test123
+    - lucky1
+    - cookie
+    - fucker
+    - jesus1
+  ------------------------------------------------------------
+
+[1M] Chargement runss_transformer/1M.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 1,000,000
+  Mots de passe uniques         : 1,000,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 7.75 chars
+  Hits sur eval                 : 68
+  Couverture eval               : 3.4017%
+  Couverture bigrammes          : 99.09%  (3,171 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [OK]   Entropie reelle        : 40.53 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  36.5%  ##################
+    Moyen  :  59.4%  #############################
+    Mixte  :   3.2%  # <-- CIBLE
+    Fort   :   0.9%  
+
+  [!!]   Mots Mixte+Fort  : 4.1%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 3.4017%  (cible : Maximale)
+
+  Exemples de hits (68) :
+    - dragon
+    - france
+    - booker
+    - angie1
+    - qwert123
+    - wwwwww
+    - 123456
+    - chino1
+    - password
+    - sucker
+  ------------------------------------------------------------
+
+======================================================================
+DONE — evaluation Transformer terminee
+======================================================================
+>>> Log sauvegarde dans : evaluate_transformer.log
+
+
+
+
+##################runs_transformer Evaluate ######################"""
+
+======================================================================
+RUN DATE : 2026-04-14 14:36:54
+MODELE   : TRANSFORMER
+======================================================================
+
+>>> Chargement ../../Data/eval.txt ...
+>>> eval.txt : 1,999 mots de passe  (1,999 uniques)
+
+======================================================================
+EVALUATION TRANSFORMER vs EVAL.TXT
+======================================================================
+
+[10k] Chargement runs_transformer/10k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 10,000
+  Mots de passe uniques         : 10,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 6.27 chars
+  Hits sur eval                 : 1
+  Couverture eval               : 0.0500%
+  Couverture bigrammes          : 53.87%  (1,724 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [!!]   Entropie reelle        : 31.80 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  65.1%  ################################
+    Moyen  :  34.0%  ################
+    Mixte  :   0.8%   <-- CIBLE
+    Fort   :   0.1%  
+
+  [!!]   Mots Mixte+Fort  : 1.0%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 0.0500%  (cible : Maximale)
+
+  Exemples de hits (1) :
+    - viper3
+  ------------------------------------------------------------
+
+[100k] Chargement runs_transformer/100k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 100,000
+  Mots de passe uniques         : 100,000
+  TTR                           : 1.0000
+  Longueur moyenne              : 6.44 chars
+  Hits sur eval                 : 17
+  Couverture eval               : 0.8504%
+  Couverture bigrammes          : 86.03%  (2,753 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [!!]   Entropie reelle        : 32.87 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  62.0%  ##############################
+    Moyen  :  36.8%  ##################
+    Mixte  :   1.1%   <-- CIBLE
+    Fort   :   0.2%  
+
+  [!!]   Mots Mixte+Fort  : 1.2%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 0.8504%  (cible : Maximale)
+
+  Exemples de hits (17) :
+    - kitty
+    - fender
+    - joker
+    - dragon
+    - matt
+    - password
+    - camini
+    - a123456
+    - fucker
+    - tare
+  ------------------------------------------------------------
+
+[1M] Chargement runs_transformer/1M.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 1,000,000
+  Mots de passe uniques         : 999,997
+  TTR                           : 1.0000
+  Longueur moyenne              : 6.70 chars
+  Hits sur eval                 : 71
+  Couverture eval               : 3.5518%
+  Couverture bigrammes          : 97.44%  (3,118 / 3,200)
+
+  -- Metriques de securite ----------------------------------------
+  [!!]   Entropie reelle        : 34.25 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  57.6%  ############################
+    Moyen  :  41.1%  ####################
+    Mixte  :   1.1%   <-- CIBLE
+    Fort   :   0.2%  
+
+  [!!]   Mots Mixte+Fort  : 1.2%  (cible : Mixte dominant)
+  [OK]   Couverture eval  : 3.5518%  (cible : Maximale)
+
+  Exemples de hits (71) :
+    - password99
+    - lucky1
+    - green123
+    - what
+    - hacker
+    - hitman
+    - marcus
+    - scorpion
+    - test
+    - mel123
+  ------------------------------------------------------------
+
+======================================================================
+DONE — evaluation Transformer terminee
+======================================================================
+>>> Log sauvegarde dans : evaluate_transformer.log
+
+
+
+
+Voici le tableau écrit en texte :
+
+### Résultats principaux
+
+| Run  | Hits V1 | Couv. V1 | Hits V2 | Couv. V2 | Gain   |
+| ---- | ------- | -------- | ------- | -------- | ------ |
+| 10k  | 1       | 0.0500%  | 5       | 0.2501%  | +5x    |
+| 100k | 17      | 0.8504%  | 21      | 1.0505%  | +1.2x  |
+| 1M   | 71      | 3.5518%  | 68      | 3.4017%  | -0.05% |
+
+---
+
+### Entropie (bits)
+
+| Version | Valeur |
+| ------- | ------ |
+| V1 10k  | 31.80  |
+| V1 1M   | 34.25  |
+| V2 10k  | 40.90  |
+| V2 1M   | 40.53  |
+
+---
+
+### Longueur moyenne
+
+| Version | Valeur     |
+| ------- | ---------- |
+| V1 10k  | 6.27 chars |
+| V1 1M   | 6.70 chars |
+| V2 10k  | 7.80 chars |
+| V2 1M   | 7.75 chars |
+

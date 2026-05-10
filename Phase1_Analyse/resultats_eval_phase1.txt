@@ -1,0 +1,12 @@
+STATS GLOBALES — EVAL
+==================================================
+Total            : 1999
+Longueur moyenne : 10.37
+Min / Max        : 2 / 33
+Uniques          : 1999
+Doublons         : 0
+
+COMPOSITION:
+  L + C + Speciaux          :   1478  (73.9%)
+  Lettres + Speciaux        :    504  (25.2%)
+  Chiffres + Speciaux       :     17  (0.9%)

@@ -1,0 +1,36 @@
+==========================================
+Job SLURM demarre
+Job ID   : 21456
+Node     : achille
+Date     : Sun Apr 19 09:48:04 CEST 2026
+==========================================
+Sun Apr 19 09:48:05 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla P100-PCIE-16GB            Off| 00000000:3B:00.0 Off |                    0 |
+| N/A   34C    P0               27W / 250W|      0MiB / 16384MiB |      1%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Lancement generate_passwords.py...
+Heure debut : Sun Apr 19 09:48:05 CEST 2026
+  File "generate_passwords.py", line 411
+    print("\n" + "=" * 65)
+        ^
+SyntaxError: invalid syntax
+srun: error: achille: task 0: Exited with exit code 1
+Heure fin : Sun Apr 19 09:48:06 CEST 2026
+Generation terminee avec succes !
+Fichiers generes :
