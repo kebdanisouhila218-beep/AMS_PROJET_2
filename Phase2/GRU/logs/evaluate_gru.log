@@ -1,0 +1,66 @@
+
+======================================================================
+RUN DATE : 2026-03-09 14:38:46
+MODELE   : GRU
+======================================================================
+>>> Chargement eval.txt ...
+>>> eval.txt : 1999 mots de passe
+
+======================================================================
+EVALUATION GRU vs EVAL.TXT
+======================================================================
+
+[10k] Chargement runs_gru/10k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 10,007
+  Mots de passe uniques         : 10,007
+  TTR                           : 1.0000
+  Longueur moyenne              : 7.05 chars
+  Hits sur eval                 : 1
+  Couverture eval               : 0.05%
+
+  -- Metriques de securite (4.3.4) --------------------------------
+  [!!]   Entropie reelle        : 36.90 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.00%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  38.0%  ###################
+    Moyen  :  57.6%  ############################
+    Mixte  :   4.2%  ## <-- CIBLE
+    Fort   :   0.2%  
+
+  [!!]   Mots de passe Mixte+Fort : 4.4%  (cible : Mixte dominant)
+  [OK]   Couverture eval set       : 0.05% (cible : Maximale)
+
+  Exemples de hits : ['fucker']
+
+[100k] Chargement runs_gru/100k.txt ...
+
+  -- Metriques generales ------------------------------------------
+  Mots de passe generes (total) : 100,008
+  Mots de passe uniques         : 99,994
+  TTR                           : 0.9999
+  Longueur moyenne              : 7.04 chars
+  Hits sur eval                 : 5
+  Couverture eval               : 0.25%
+
+  -- Metriques de securite (4.3.4) --------------------------------
+  [!!]   Entropie reelle        : 36.85 bits  (cible >= 40 bits)
+  [OK]   Taux de doublons       : 0.01%      (cible < 5%)
+
+  Force des mots de passe (distribution) :
+    Faible :  38.7%  ###################
+    Moyen  :  56.9%  ############################
+    Mixte  :   4.1%  ## <-- CIBLE
+    Fort   :   0.3%  
+
+  [!!]   Mots de passe Mixte+Fort : 4.4%  (cible : Mixte dominant)
+  [OK]   Couverture eval set       : 0.25% (cible : Maximale)
+
+  Exemples de hits : ['mel123', 'logan1', '123456', 'booker', 'fucker']
+
+======================================================================
+DONE -- evaluation GRU terminee
+======================================================================
+>>> Log sauvegarde dans : evaluate_gru.log
